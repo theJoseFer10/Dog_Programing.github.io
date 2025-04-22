@@ -1,0 +1,559 @@
+/* Estilos generales */
+body {
+    background-color: #FBFFE4;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+#contenedor{
+    position: relative;
+    z-index: 1;
+}
+
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    background-image: url("");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* Navegación */
+.navegacion {
+    background-color: #3D8D7A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*box-shadow: 1px 8px 10px 0px rgba(0, 0, 255, .2);*/
+}
+
+.logo img {
+    height: 70px; /* Ajusta según el tamaño de tu logo */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #A3D1C6;
+    color: #fff;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn_enlaces {
+    padding: 15px 30px;
+    background-color: #3D8D7A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: 'Impact', sans-serif;
+    width: 200px;
+}
+
+.btn_enlaces:hover {
+    background-color: #A3D1C6;
+}
+
+/*Caracteristicas*/
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FBFFE4;
+    color: black;
+    margin-top: 70px;
+}
+
+.caracteristica {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FBFFE4;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 0px rgba(0, 0, 255, .2);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    opacity: 0;
+}
+
+.caracteristica h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caracteristica img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*Productos*/
+.contenedor-productos {
+    display: flex;
+    align-items: flex-start;  /* Alinear los elementos arriba */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre las secciones */
+    max-width: 100%; /* Limitar el ancho del contenedor */
+    margin: 0 auto; /* Centrar en la página */
+    background-color: white;
+}
+
+/* Sección de Productos Destacados */
+.productos-destacados {
+    width: 30%; /* Ocupa el 30% del ancho */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Sección de Productos Normales */
+.productos {
+    width: 65%; /* Ocupa el 65% del ancho */
+    padding: 20px;
+}
+
+/* Ajustar imágenes de productos destacados */
+.productos-destacado-imagen img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ajustar grid de productos */
+
+.hero-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 30px;
+    text-align: center;
+}
+
+.hero-productos h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+}
+
+.hero-productos p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero-content-productos{
+    max-width: 800px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    width: calc(80% - 40px); /* 2 columnas */
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Sección de empresa*/
+.hero-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 30px;
+    text-align: center;
+}
+
+.hero-empresa h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+}
+
+.hero-content-empresa p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FBFFE4;
+    color: black;
+    margin-top: 60px;
+}
+
+
+.empresa h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+}
+
+.empresa p{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.info-empresa{
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.imgs-empresa{
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+}
+
+.imgs-empresa img{
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
+}
+
+/*################################*/
+/*Planes y precios de la empresa.*/
+/*##############################*/
+
+.hero-planes_precios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 30px;
+    text-align: center;
+}
+
+.hero-planes_precios h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+}
+
+.hero-planes_precios p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.planes_precios{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.planes{
+    display: block;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-item-align: baseline;
+
+    width: 350px;
+    height: 600px;
+
+    border-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10%;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+    cursor: pointer;
+}
+
+.planes:hover{
+    background-color: #333;
+    color: white;
+    box-shadow: 1px 8px 10px 0px rgba(0, 0, 255, .2);
+}
+
+.planes ul{
+    justify-content: left;
+    text-align: left;
+    list-style: square;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+
+/*#####################*/
+/*Apartado de contacto*/
+/*#####################*/
+
+.hero-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 30px;
+    text-align: center;
+}
+
+.hero-contacto h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+}
+
+.hero-contacto p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/*##########################*/
+/*Sección de punto de venta*/
+/*##########################*/
+
+.hero-punto-venta{
+    display: flex;
+    border-bottom: #333;
+    border-bottom-style: solid;
+    background-color: #333;
+    color: white;
+    box-shadow: 1px 8px 10px 0px rgba(0, 0, 255, .2);
+}
+
+.hero-content-punto-venta{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-imgPT{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imgPT img{
+    margin-bottom: 12%;
+    width: 35%;
+    height: 40%;
+}
+
+.btn_compras{
+    padding: 10px;
+    background-color: #3D8D7A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: 'Impact', sans-serif;
+    width: 45%;
+}
+
+.btn_compras:hover{
+    background-color: #A3D1C6;
+}
+
+.hero-textPT{
+    padding: 30px;
+}
+
+.punto-venta-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.punto-venta-content li{
+    list-style: decimal;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.reseñas{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    box-shadow: 0px -4px 10px rgba(0, 0, 255, .2);
+}
+
+.reseña-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    margin-top: 60px;
+}
+
+.reseña-form input{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reseña-form textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reseña-form button{
+    padding: 10px;
+    background-color: #3D8D7A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reseña-form button:hover{
+    background-color: #A3D1C6;
+}
+
+/*#######*/
+/*Dialog*/
+/*#####*/
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
